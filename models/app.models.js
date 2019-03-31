@@ -8,4 +8,4 @@ const AppSchema = mongoose.Schema({
     timestamps: true  
 });
 
-module.exports = mongoose.model('Inkredo', AppSchema);
+module.exports = mongoose.model('inkredo', AppSchema);

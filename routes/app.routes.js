@@ -6,6 +6,7 @@ module.exports = (app) => {
     app.post('/story/addstory', story.create);
     app.get('/story/findstory/:username',story.findAll);
     app.get('/story/findAuthoredstory', story.find);
+    app.get('/story/finddrafttories/:username', story.Draft);
     app.put('/story/:storyId',story.update);
     app.delete('/story/:storyId', story.delete);
 

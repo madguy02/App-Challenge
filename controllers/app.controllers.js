@@ -87,6 +87,17 @@ exports.find = (req,res) => {
     })
 }
 
+exports.Draft = (req,res) => {
+    inkredo.find({"username":req.params.username,"story_state": "Draft","role": "Author"}).limit(5).sort({updatedAt: 1})
+    .then(stories => {
+        res.send(stories);
+    }).catch(err => {
+        res.send(500).send({
+            message: err.message || 'error occured'
+        })
+    })
+}
+
 // update API
 
 exports.update = (req, res) => {

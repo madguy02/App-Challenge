@@ -1,0 +1,27 @@
+{
+  "name": "app-challenge",
+  "version": "0.1.0",
+  "description": "A Test App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madguy02/App-Challenge.git"
+  },
+  "author": "Manish Kakoti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madguy02/App-Challenge/issues"
+  },
+  "homepage": "https://github.com/madguy02/App-Challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1"
+  }
+}

@@ -21,9 +21,9 @@ content.save()
 // find all API for stories
 
 exports.findAll = (req, res) => {
-    inkredo.find()
-    .then(story => {
-        res.send(story);
+    inkredo.find().limit(5).sort({updatedAt:1})
+    .then(stories => {
+        res.send(stories);
     }).catch(err => {
         res.status(500).send({
             message: err.message || 'Some error occured while retrieving files'
